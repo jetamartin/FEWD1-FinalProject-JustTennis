@@ -1,0 +1,400 @@
+
+@font-face {
+    font-family: fontAwesome;
+    src: url(../fonts/fontawesome-webfornt.svg);
+}
+
+/*************** Header styling ****************/
+.header-signin-bg {
+    background-color: #33af57;
+    padding-top: .625rem;
+    padding-bottom: .625rem;    
+/*    min-height: 3rem;*/
+}
+
+.darkGreen {
+    background-color: #1a4212;
+}
+
+.header-main-bg {
+    background-color: #1a4212;
+/*    min-height: 12.5rem;*/
+}
+.orange-accent-bg {
+    background-color: #e25e12;
+    min-height: .5em; 
+}
+.position-left {
+   text-align: left; 
+}
+.position-right {
+    text-align: right;
+}
+.position-center {
+    text-align: center; 
+}
+
+/* Header Padding */
+header .element-padding {
+    padding-top: 3rem;
+}
+
+header .logo-padding {
+    padding-top: 1rem;
+}
+
+header span {
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.signInPadding {
+    padding-top: .25em;
+}
+
+.fullPhoneNumbers {
+    display: none;
+}
+
+.phoneNumber {
+    font-size: 1.3rem;
+}
+.phoneButton {
+    padding-top: .75rem;
+}
+.phoneButtonIcon {
+    font-size: 1.75rem;
+}
+.phoneIcon {
+    font-size: 1em;
+}
+
+.headerSearch {
+    display: none;
+}
+
+.bodySearch {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.promotions {
+    padding-top: .5em;
+    line-height: 1.25rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Override Bootstrap  settings */
+.btn {
+    background-color: #e25e12;
+    background-image: none;
+}
+.btn:hover {
+    background-color: #c04d0b;
+    background-image: none;
+}
+.btn:focus {
+    background-color: #c04d0b;
+    background-image: none;
+}
+.btn-default {
+    text-shadow: none;
+}
+.align-center {
+    margin-top: auto;
+}
+
+.caret {
+    color: orange;
+
+}
+
+/* Responsive images in header */
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation Styling*/
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    background-color: #e25e12;
+    color: #ffffff;
+}
+
+.navbar-toggle {
+    background-color: #e25e12;
+    margin-right: 0;
+}
+
+.navbar {
+    min-height: 0;
+    margin-bottom: 0;
+    border: none;
+}
+.icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default {
+/*    background-color: pink;*/
+    border-color: #1a4212;    
+}
+
+.navbar-default .navbar-nav>.active>a {
+    background-color: #e25e12;
+    background-image: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+/*
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+*/
+
+
+/*
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    text-shadow: none;
+}
+*/
+
+.navbar-default:hover .navbar-nav>li>a:hover {
+    color: #e25e12;
+    text-shadow: none;
+}
+
+/*
+.navbar-default .navbar-nav>.active>a {
+    color: white;
+    background-color: #e25e12;
+    background-image: none;
+}
+*/
+
+.header-promotions-bg {
+    background-color: palegreen;
+    min-height: 2.5rem;
+    border-bottom: solid 1px #e25e12;
+}
+/* Text color on promotions banner e.g. Free Shipping */
+.orange  {
+    color: #e25e12;
+}
+
+
+/*  Body Styling */
+
+.main {
+    background-color: #ebebeb;
+    min-height: 50em;
+}
+
+.playerBackground {
+    background-image: url("../images/playerBackground.gif");
+    background-size: 25%;
+    opacity: .7;
+}
+
+/* Styling for .sideNav and .coreContent for Demo purposes*/
+.sideNav {
+/*  background-color: palegreen; */
+  min-height: 50em;
+    color: lightgrey;
+    display: none;
+/*    opacity: .4;*/
+}
+.coreContent {
+    background-color: #e25e12;
+    min-height: 50em;
+    opacity: .2;
+    width: 100%;
+}
+
+/* Sample Side Nav Styling 
+All items in .subNavItems will ultimately be links.
+Sample provided would be side nav for Gear page.
+*/
+
+.sideNav {
+    display: none;
+}
+.sideNav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sideNav .primaryNavItems {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 3rem;
+    
+}
+
+.sideNav .subNavItems {
+
+    font-size: 1.75rem;
+    font-style: italic;
+    text-transform: none;
+    line-height: 3rem;
+    padding: 1.5rem;
+}
+.sideNav .subNavItems li {
+    font-weight: bold;
+    color: #1a4212;
+}
+
+/*  Footer Styling */
+footer {
+    min-height: 20em;
+}
+footer.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+footer h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: Bold;
+    text-transform: uppercase;
+}
+
+.greenLetters {
+    color: #1a4212;
+    font-weight: bold;
+}
+centerContent {
+    margin: auto;
+}
+
+footer .subNavElements {
+    color: #fff;
+    font-size: 1.25rem;
+    font-style: italic;
+    list-style: none;
+    padding-left: 0;
+    line-height: 2em;
+}
+
+footer .copyright {
+    color: #fff;
+    padding-top:
+}
+
+.stayConnected {
+    background-color: palegreen; 
+    min-height: 5rem;  
+}
+
+.newsLetterSignup {
+    margin-top: 1rem;
+}
+
+footer .social-media {
+    margin-top: 1.75rem;
+}
+footer .copyright {
+    color: #fff;
+    margin-top: 1.75rem;
+    font-style: italic;
+    font-size: .75rem;
+}
+
+/* Key Social Media colors */
+.fa-twitter-square {
+    color: #60a9dc;    
+}
+.fa-facebook-square {
+    color: #3b579d;
+}
+.fa-google-plus-square {
+    color: #D84B37;
+}
+.fa-tumblr-square {
+    color: #35465c;
+}
+
+.fa-instagram {
+    color: #517fa4; 
+}
+
+.fa-pinterest-square {
+    color: #cb2028; 
+}
+
+/*
+.navbar-default .navbar-nav>.active>a {
+    background-color: #e25e12;
+    border-left-color: #fff;
+    border-top-color: #fff;
+    border-right-color: #fff;
+    border-bottom: #e25e12;
+    border-bottom-width: 3px;
+    border-width: 1px;
+    border-style: solid;
+    background-image: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+*/
+
+/*  Media Queries */
+@media (min-width: 768px) {
+    .navbar-default .container {
+        background-color: #1a4212;
+    }
+    .headerSearch {
+        display: inline-block;
+        margin-top: -8.5rem; 
+/*        margin-top: -2.0em;*/ /* Place search bar under logo */
+    }
+    .navbar-header {
+        display: none;
+    }
+    .bodySearch {
+        display: none;        
+    }
+    
+    .navbar-default .navbar-nav>li>a {
+        color: #fff;
+    }  
+    .fullPhoneNumbers {
+        display: inline-block;
+            }
+    .phoneButton {
+        display: none;
+    }
+    .sideNav {
+        display: block;
+        width: 30%
+    }
+    .coreContent {
+        width: 70%;
+    }
+
+}
+
+/*
+@media (min-width: 663px) {
+    .displayPhoneNumbers {
+        display: inline-block; 
+    }
+
+    
+}
+*/
+
+/*
+@media (max-width: 767px) {
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #fff;
+    }
+}
+*/
+    
+
