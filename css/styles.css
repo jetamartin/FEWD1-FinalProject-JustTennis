@@ -1,15 +1,18 @@
-
+/*
 @font-face {
     font-family: fontAwesome;
     src: url(../fonts/fontawesome-webfornt.svg);
 }
+*/
 
 /*************** Header styling ****************/
+
+
 .header-signin-bg {
     background-color: #33af57;
     padding-top: .625rem;
     padding-bottom: .625rem;    
-/*    min-height: 3rem;*/
+    min-height: 3rem;
 }
 
 .darkGreen {
@@ -49,7 +52,7 @@ header span {
     font-size: 1.25rem;
 }
 .signInPadding {
-    padding-top: .25em;
+    padding-top: 0;
 }
 
 .fullPhoneNumbers {
@@ -63,7 +66,7 @@ header span {
     padding-top: .75rem;
 }
 .phoneButtonIcon {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
 }
 .phoneIcon {
     font-size: 1em;
@@ -187,30 +190,37 @@ header img {
 
 
 /*  Body Styling */
-
-.main {
-    background-color: #ebebeb;
-    min-height: 50em;
-}
-
-.playerBackground {
+.fullMain {
     background-image: url("../images/playerBackground.gif");
     background-size: 25%;
     opacity: .7;
+    padding-left: 0;
+    padding-right: 0;
 }
+.main {
+    background:rgba(255,255,255,.5);
+    box-shadow: 0px 0px 15px rgba(0,0,0,.2) inset;
+/*    background-color: #ebebeb;*/
+/*    opacity: .3*/
+    min-height: 50em;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
 
 /* Styling for .sideNav and .coreContent for Demo purposes*/
 .sideNav {
-/*  background-color: palegreen; */
+/*  background-color: palegreen;*/
+  background:rgba(153, 255, 153, .2);
   min-height: 50em;
-    color: lightgrey;
+/*    color: lightgrey;*/
     display: none;
-/*    opacity: .4;*/
 }
 .coreContent {
-    background-color: #e25e12;
+/*    background-color: #e25e12;*/
+    background:rgba(255, 153, 51, .6);
     min-height: 50em;
-    opacity: .2;
     width: 100%;
 }
 
@@ -271,14 +281,37 @@ footer h3 {
 centerContent {
     margin: auto;
 }
+.footerNavArea {
+    color: #fff;
+}
 
-footer .subNavElements {
+/*======== Next 2 lines centers footer nav elements and left justifies them =======*/
+.footerNavBlock {
+   text-align: center
+}
+.footerNavElements {
+    display: inline-block;
+    text-align: left;
+}
+/*===========================================================*/
+
+.footerNavElements h3 {
+    text-align: left;
+ 
+}
+.footerNavElements ul {
+    tex-align-left;
+    padding-left: 0;
+}
+
+.footerNavElements ul li {
     color: #fff;
     font-size: 1.25rem;
     font-style: italic;
     list-style: none;
-    padding-left: 0;
+    padding-left: 2px;
     line-height: 2em;
+/*    text-align: center;*/
 }
 
 footer .copyright {
@@ -290,41 +323,52 @@ footer .copyright {
     background-color: palegreen; 
     min-height: 5rem;  
 }
+.stayConnected {
+    text-align: center;
+}
 
 .newsLetterSignup {
-    margin-top: 1rem;
+    padding-top: 1.5rem;
 }
 
 footer .social-media {
-    margin-top: 1.75rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    text-align: center;    
 }
 footer .copyright {
     color: #fff;
-    margin-top: 1.75rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;    
     font-style: italic;
     font-size: .75rem;
 }
 
 /* Key Social Media colors */
 .fa-twitter-square {
-    color: #60a9dc;    
+    color: #60a9dc;
+    font-size: 36px;
 }
 .fa-facebook-square {
     color: #3b579d;
+    font-size: 36px;
 }
 .fa-google-plus-square {
     color: #D84B37;
+    font-size: 36px;
 }
 .fa-tumblr-square {
     color: #35465c;
 }
 
 .fa-instagram {
-    color: #517fa4; 
+    color: #517fa4;
+    font-size: 36px;
 }
 
 .fa-pinterest-square {
-    color: #cb2028; 
+    color: #cb2028;
+    font-size: 36px;
 }
 
 /*
@@ -378,6 +422,13 @@ footer .copyright {
     }
 
 }
+
+/*@media (max-width: 767px) {*/
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #e25e12;
+    background-color: lightgrey;
+}
+/*}*/
 
 /*
 @media (min-width: 663px) {
