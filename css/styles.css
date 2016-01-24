@@ -6,7 +6,10 @@
 */
 
 /*************** Header styling ****************/
-
+body {
+    margin: 0;
+    padding: 0;
+}
 
 .header-signin-bg {
     background-color: #33af57;
@@ -38,9 +41,10 @@
 }
 
 /* Header Padding */
-header .element-padding {
-    padding-top: 3rem;
-}
+.element-padding {
+        padding-top: 5%;
+    }
+
 
 header .logo-padding {
     padding-top: 1rem;
@@ -76,17 +80,6 @@ header span {
     display: none;
 }
 
-.bodySearch {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.promotions {
-    padding-top: .5em;
-    line-height: 1.25rem;
-    font-weight: bold;
-    font-size: 1rem;
-}
 
 /* Override Bootstrap  settings */
 .btn {
@@ -113,7 +106,7 @@ header span {
 
 }
 
-/* Responsive images in header */
+/* Make logo image responsive */
 header img {
     max-width: 100%;
     height: auto;
@@ -135,13 +128,13 @@ header img {
     min-height: 0;
     margin-bottom: 0;
     border: none;
+    font-size: 18px;
 }
 .icon-bar {
     background-color: #fff;
 }
 
 .navbar-default {
-/*    background-color: pink;*/
     border-color: #1a4212;    
 }
 
@@ -158,12 +151,28 @@ header img {
     text-shadow: none;
 }
 
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #e25e12;
+    background-color: lightgrey;
+}
+
 /* Sets color of dropdown nav elements text to orange*/
 .dropdown-menu>li>a {
     color: #e25e12;
 }
 
+/*************** Main Content Styling ****************/
+.bodySearch {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 
+.promotions {
+    padding-top: .5em;
+    line-height: 1.25rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
 
 .header-promotions-bg {
     background-color: #adfbd0;
@@ -176,7 +185,6 @@ header img {
 }
 
 
-/*  Body Styling */
 .fullMain {
     background-image: url("../images/playerBackground.gif");
     background-size: 25%;
@@ -252,6 +260,18 @@ Sample provided would be side nav for Gear page.
     line-height: 3rem;    
 }
 
+/*************** Footer Styling ****************/
+.bodySearch {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.promotions {
+    padding-top: .5em;
+    line-height: 1.25rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
 /*  Footer Styling */
 footer {
     min-height: 20em;
@@ -295,15 +315,15 @@ centerContent {
     color: #e25e12;
 }
 
-/*======== Next 2 lines centers footer nav elements and left justifies them =======*/
+/*======== Next 2 CSS statments centers footer nav elements and left justifies them =======*/
 .footerNavBlock {
-   text-align: center
+   text-align: center;
 }
 .footerNavElements {
     display: inline-block;
     text-align: left;
 }
-/*===========================================================*/
+/*================================================================================*/
 
 .footerNavElements ul {
     text-align: left;
@@ -393,48 +413,11 @@ footer .copyright {
 }
 */
 
-/*  Media Queries */
-@media (min-width: 768px) {
-    .navbar-default .container {
-        background-color: #1a4212;
-    }
-    .headerSearch {
-        display: inline-block;
-        margin-top: -8.5rem; 
-/*        margin-top: -2.0em;*/ /* Place search bar under logo */
-    }
-    .navbar-header {
-        display: none;
-    }
-    .bodySearch {
-        display: none;        
-    }
-    
-    .navbar-default .navbar-nav>li>a {
-        color: #fff;
-    }  
-    .fullPhoneNumbers {
-        display: inline-block;
-            }
-    .phoneButton {
-        display: none;
-    }
-    .sideNav {
-        display: block;
-        width: 30%
-    }
-    .coreContent {
-        width: 70%;
-    }
 
-}
 
-/*@media (max-width: 767px) {*/
-.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
-    color: #e25e12;
-    background-color: lightgrey;
-}
-/*}*/
+
+
+
 
 /*
 @media (min-width: 663px) {
@@ -488,4 +471,42 @@ footer .copyright {
   border: 1px solid #fff;
   margin-top: -1px;
   padding: 15px;
+}
+/*  Media Queries */
+@media (min-width: 768px) {
+    .navbar-default .container {
+        background-color: #1a4212;
+    }
+    .headerSearch {
+        display: inline-block;
+        margin-top: -8.5rem; 
+/*        margin-top: -2.0em;*/ /* Place search bar under logo */
+    }
+    .navbar-header {
+        display: none;
+    }
+    .bodySearch {
+        display: none;        
+    }
+    
+    .navbar-default .navbar-nav>li>a {
+        color: #fff;
+    }  
+    .fullPhoneNumbers {
+        display: inline-block;
+            }
+    .phoneButton {
+        display: none;
+    }
+    .sideNav {
+        display: block;
+        width: 30%
+    }
+    .coreContent {
+        width: 70%;
+    }
+    .element-padding {
+        padding-top: 3rem;
+}
+
 }
