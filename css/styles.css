@@ -74,7 +74,12 @@ header span {
 }
 .phoneIcon {
     font-size: 1em;
+} 
+/*
+.glyphicon-user:before {
+    color:blue;
 }
+*/
 
 .headerSearch {
     display: none;
@@ -83,7 +88,7 @@ header span {
 
 /* Override Bootstrap  settings */
 .btn {
-    background-color: #e25e12;
+    background-color: transparent;
     background-image: none;
 }
 .btn:hover {
@@ -119,7 +124,7 @@ header img {
 }
 
 .navbar-toggle {
-    background-color: #e25e12;
+    background-color: transparent;
     margin-right: 0;
     border-color: #fff;
 }
