@@ -128,6 +128,7 @@ header img {
 .navbar-toggle {
     background-color: #e25e12;
     margin-right: 0;
+    border-color: #fff;
 }
 
 .navbar {
@@ -151,35 +152,21 @@ header img {
     border-top-right-radius: 4px;
 }
 
-/*
-.navbar-default .navbar-nav>li>a {
-    color: #fff;
-}
-*/
-
-
-/*
-.navbar-default .navbar-nav>li>a {
-    color: white;
-    text-shadow: none;
-}
-*/
 
 .navbar-default:hover .navbar-nav>li>a:hover {
     color: #e25e12;
     text-shadow: none;
 }
 
-/*
-.navbar-default .navbar-nav>.active>a {
-    color: white;
-    background-color: #e25e12;
-    background-image: none;
+/* Sets color of dropdown nav elements text to orange*/
+.dropdown-menu>li>a {
+    color: #e25e12;
 }
-*/
+
+
 
 .header-promotions-bg {
-    background-color: palegreen;
+    background-color: #adfbd0;
     min-height: 2.5rem;
     border-bottom: solid 1px #e25e12;
 }
@@ -213,14 +200,14 @@ header img {
 .sideNav {
 /*  background-color: palegreen;*/
   background:rgba(153, 255, 153, .2);
-  min-height: 50em;
+  min-height: 65em;
 /*    color: lightgrey;*/
     display: none;
 }
 .coreContent {
 /*    background-color: #e25e12;*/
-    background:rgba(255, 153, 51, .6);
-    min-height: 50em;
+    background:rgba(255, 153, 51, .15);
+    min-height: 65em;
     width: 100%;
 }
 
@@ -237,25 +224,32 @@ Sample provided would be side nav for Gear page.
     padding: 0;
 }
 
-.sideNav .primaryNavItems {
+.sideNav .primaryNavItems {    
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: bold;
     line-height: 3rem;
     
 }
+.sideNav a {
+    display:block;
+    text-decoration-color: none;
+    color: #1a4212;
+    padding-left: .5em;
+    border-bottom: 1px solid lightgrey;
+}
 
-.sideNav .subNavItems {
+.sideNav a:hover {
+    background-color: #e25e12;
+    text-decoration: none;
+    color: #fff;
+}
 
+.subNavItems {
     font-size: 1.75rem;
     font-style: italic;
     text-transform: none;
-    line-height: 3rem;
-    padding: 1.5rem;
-}
-.sideNav .subNavItems li {
-    font-weight: bold;
-    color: #1a4212;
+    line-height: 3rem;    
 }
 
 /*  Footer Styling */
@@ -266,10 +260,16 @@ footer.container-fluid {
     padding-left: 0;
     padding-right: 0;
 }
+.footerNav {
+    color: white;
+}
+
+.footerNav a:hover { 
+    color: #fff;
+}
 
 footer h3 {
-    color: #fff;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: Bold;
     text-transform: uppercase;
 }
@@ -285,6 +285,16 @@ centerContent {
     color: #fff;
 }
 
+.footerNavArea a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerNavArea a:hover {
+    text-decoration: none;
+    color: #e25e12;
+}
+
 /*======== Next 2 lines centers footer nav elements and left justifies them =======*/
 .footerNavBlock {
    text-align: center
@@ -295,12 +305,8 @@ centerContent {
 }
 /*===========================================================*/
 
-.footerNavElements h3 {
-    text-align: left;
- 
-}
 .footerNavElements ul {
-    tex-align-left;
+    text-align: left;
     padding-left: 0;
 }
 
@@ -320,7 +326,7 @@ footer .copyright {
 }
 
 .stayConnected {
-    background-color: palegreen; 
+    background-color: #adfbd0; 
     min-height: 5rem;  
 }
 .stayConnected {
@@ -447,5 +453,39 @@ footer .copyright {
     }
 }
 */
-    
+  
+.jq-elevator .jq-bottom:hover, .jq-elevator .jq-item:hover, .jq-elevator .jq-top:hover {
+    opacity: .3;
+}
 
+/* accordion style */
+
+
+.ac-pane { margin-bottom: 15px; background-color:#16A085; color:#fff;}
+
+.ac-pane:last-child { margin-bottom: 0; }
+
+.ac-content { display: none; }
+
+.ac-title {
+  border: 1px solid #fff;
+  color: #fff;
+  display: block;
+  padding: 12px;
+  background-color:#1ABC9C;
+}
+
+.ac-title i {
+  float: right;
+  font-size: 20px;
+}
+
+.ac-title i:before { content: "\f107"; }
+
+.active .ac-title i:before { content: "\f106"; }
+
+.ac-content {
+  border: 1px solid #fff;
+  margin-top: -1px;
+  padding: 15px;
+}
