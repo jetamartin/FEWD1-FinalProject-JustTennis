@@ -1,0 +1,102 @@
+.racquetSelect {
+  color: #1a4212;    
+}
+.racquetSelect h4 {
+    font-size: 2.75rem;
+
+}
+.racquetSelect h5 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #e25e12;
+}
+.racquetSelect span {
+    font-size: 2.0rem;
+}
+.racquetsDesc {
+    box-shadow: 0px 0 15px rgba(0, 0, 0, .2);
+    border-radius: 4px;
+}
+.racquetsDesc h2 {
+    font-size: 2.5rem;
+    color: #e25e12;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.racquetsDesc p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a4212;    
+}
+.racquetSummary {
+    border-bottom: solid 1rem #e25e12; 
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.racquet img {
+    width: 100%;
+    height: auto;
+}
+.racquet {
+    padding-top: 1.5rem;
+}
+/*
+.racquet { 
+   position: relative;  
+}
+*/
+
+/*
+.racquet h5 { 
+   position: absolute;
+    color: #e25e12;
+    font-weight: bold;
+    font-size: 1.5em;
+   top: 3; 
+   left: 85px;
+}
+
+.racquet span {
+    position: absolute;
+    color: #1a4212;
+    font-weight: bold;
+    bottom: 2px;
+    left: 55px;
+    font-size: 1.5em;
+}*/
+
+/* Accordion Styling*/
+.racquetsDesc .ac-title {
+    border: none;
+    background-color: transparent;
+}
+
+.racquetsDesc .ac-content {
+    border: none;
+}
+.racquetsDesc .ac-pane {
+    background-color: transparent;
+}
+.racquetsDesc .ac-title i {
+    font-size: 35px;
+    margin-top: -40px;
+    color: #e25e12;
+}
+.racquetsDesc a:focus, .racquetDesc a:hover {
+    color: #e25e12;
+    text-decoration: none;
+}
+.racquetsDesc a:hover {
+    color: #e25e12;
+    text-decoration:underline;
+}
+
+@media (min-width: 768px) {
+   .racquetsDesc h2 {
+    font-size: 3rem; 
+   }
+    .racquetsDesc .ac-title i {
+    font-size: 45px;
+    margin-top: -50px;
+    }
+}

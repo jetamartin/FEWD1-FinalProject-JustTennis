@@ -5,7 +5,9 @@
 }
 */
 
+
 /*************** Header styling ****************/
+
 body {
     margin: 0;
     padding: 0;
@@ -14,7 +16,7 @@ body {
 .header-signin-bg {
     background-color: #33af57;
     padding-top: .625rem;
-    padding-bottom: .625rem;    
+    padding-bottom: .625rem;
     min-height: 3rem;
 }
 
@@ -24,27 +26,32 @@ body {
 
 .header-main-bg {
     background-color: #1a4212;
-/*    min-height: 12.5rem;*/
+    /*    min-height: 12.5rem;*/
 }
+
 .orange-accent-bg {
     background-color: #e25e12;
-    min-height: .5em; 
+    min-height: .5em;    
 }
+
 .position-left {
-   text-align: left; 
+    text-align: left;
 }
+
 .position-right {
     text-align: right;
 }
+
 .position-center {
-    text-align: center; 
+    text-align: center;
 }
 
-/* Header Padding */
-.element-padding {
-        padding-top: 5%;
-    }
 
+/* Header Padding */
+
+.element-padding {
+    padding-top: 5%;
+}
 
 header .logo-padding {
     padding-top: 1rem;
@@ -55,6 +62,7 @@ header span {
     font-weight: bold;
     font-size: 1.25rem;
 }
+
 .signInPadding {
     padding-top: 0;
 }
@@ -66,15 +74,20 @@ header span {
 .phoneNumber {
     font-size: 1.3rem;
 }
+
 .phoneButton {
     padding-top: .75rem;
 }
+
 .phoneButtonIcon {
     font-size: 1.25rem;
 }
+
 .phoneIcon {
     font-size: 1em;
-} 
+}
+
+
 /*
 .glyphicon-user:before {
     color:blue;
@@ -87,38 +100,48 @@ header span {
 
 
 /* Override Bootstrap  settings */
+
 .btn {
     background-color: transparent;
     background-image: none;
 }
+
 .btn:hover {
     background-color: #c04d0b;
     background-image: none;
 }
+
 .btn:focus {
     background-color: #c04d0b;
     background-image: none;
 }
+
 .btn-default {
     text-shadow: none;
 }
+
 .align-center {
     margin-top: auto;
 }
 
 .caret {
     color: orange;
-
 }
 
+
 /* Make logo image responsive */
+
 header img {
     max-width: 100%;
     height: auto;
 }
 
+
 /* Navigation Styling*/
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
     background-color: #e25e12;
     color: #ffffff;
 }
@@ -135,12 +158,13 @@ header img {
     border: none;
     font-size: 18px;
 }
+
 .icon-bar {
     background-color: #fff;
 }
 
 .navbar-default {
-    border-color: #1a4212;    
+    border-color: #1a4212;
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -150,78 +174,106 @@ header img {
     border-top-right-radius: 4px;
 }
 
-
 .navbar-default:hover .navbar-nav>li>a:hover {
     color: #e25e12;
     text-shadow: none;
 }
 
-.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
     color: #e25e12;
     background-color: lightgrey;
 }
 
+
 /* Sets color of dropdown nav elements text to orange*/
+
 .dropdown-menu>li>a {
     color: #e25e12;
 }
 
+
 /*************** Main Content Styling ****************/
+
 .bodySearch {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
 .promotions {
-    padding-top: .5em;
-    line-height: 1.25rem;
-    font-weight: bold;
-    font-size: 1rem;
+    padding: .5rem 0; 
+    font-weight: bold;       
 }
-
+.promotions span {
+    display: inline-block;
+    font-size: 1.5rem;
+    line-height: .875rem;
+    padding-top: 5px;
+    text-transform: capitalize;
+}
 .header-promotions-bg {
     background-color: #adfbd0;
     min-height: 2.5rem;
     border-bottom: solid 1px #e25e12;
 }
+
+
 /* Text color on promotions banner e.g. Free Shipping */
-.orange  {
+.orange {
     color: #e25e12;
 }
-
 
 .fullMain {
     background-image: url("../images/playerBackground.gif");
     background-size: 25%;
-    opacity: .7;
     padding-left: 0;
     padding-right: 0;
 }
+
 .main {
-    background:rgba(255,255,255,.5);
-    box-shadow: 0px 0px 15px rgba(0,0,0,.2) inset;
-/*    background-color: #ebebeb;*/
-/*    opacity: .3*/
+    background: rgba(255, 255, 255, .5);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .2) inset;
+    /*    background-color: #ebebeb;*/
+    /*    opacity: .3*/
     min-height: 50em;
     padding-left: 0;
     padding-right: 0;
 }
 
 
-
 /* Styling for .sideNav and .coreContent for Demo purposes*/
+
 .sideNav {
-/*  background-color: palegreen;*/
-  background:rgba(153, 255, 153, .2);
-  min-height: 65em;
-/*    color: lightgrey;*/
+    /*  background:rgba(153, 255, 153, .2);*/
     display: none;
+/*    border-right: solid 1px lightGrey;*/
+    box-shadow: 0px none 15px rgba(0, 0, 0, .2);
 }
+
 .coreContent {
-/*    background-color: #e25e12;*/
-    background:rgba(255, 153, 51, .15);
-    min-height: 65em;
+    /*    background:rgba(255, 153, 51, .15);*/
     width: 100%;
+}
+
+/* Home Page Slider */
+#homePageSlider img {
+    width: 100%;
+    height: auto;
+}
+
+#homePageSlider {
+    border: solid 3px lightgrey;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .2);
+}
+.responsiveImage img {
+    width: 100%;
+    height: auto;
+}
+
+.fourAds, .clearance  {
+    margin: 2rem 0;
+    border: solid 2px lightgrey;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .2);
 }
 
 /* Sample Side Nav Styling 
@@ -232,21 +284,22 @@ Sample provided would be side nav for Gear page.
 .sideNav {
     display: none;
 }
+
 .sideNav ul {
     list-style: none;
     padding: 0;
 }
 
-.sideNav .primaryNavItems {    
+.sideNav .primaryNavItems {
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: bold;
     line-height: 3rem;
-    
 }
+
 .sideNav a {
-    display:block;
-    text-decoration-color: none;
+    display: block;
+    text-decoration: none;
     color: #1a4212;
     padding-left: .5em;
     border-bottom: 1px solid lightgrey;
@@ -259,13 +312,15 @@ Sample provided would be side nav for Gear page.
 }
 
 .subNavItems {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-style: italic;
     text-transform: none;
-    line-height: 3rem;    
+    line-height: 3rem;
 }
 
+
 /*************** Footer Styling ****************/
+
 .bodySearch {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -277,19 +332,24 @@ Sample provided would be side nav for Gear page.
     font-weight: bold;
     font-size: 1rem;
 }
+
+
 /*  Footer Styling */
+
 footer {
     min-height: 20em;
 }
+
 footer.container-fluid {
     padding-left: 0;
     padding-right: 0;
 }
+
 .footerNav {
     color: white;
 }
 
-.footerNav a:hover { 
+.footerNav a:hover {
     color: #fff;
 }
 
@@ -303,9 +363,11 @@ footer h3 {
     color: #1a4212;
     font-weight: bold;
 }
+
 centerContent {
     margin: auto;
 }
+
 .footerNavArea {
     color: #fff;
 }
@@ -320,14 +382,19 @@ centerContent {
     color: #e25e12;
 }
 
+
 /*======== Next 2 CSS statments centers footer nav elements and left justifies them =======*/
+
 .footerNavBlock {
-   text-align: center;
+    text-align: center;
 }
+
 .footerNavElements {
     display: inline-block;
     text-align: left;
 }
+
+
 /*================================================================================*/
 
 .footerNavElements ul {
@@ -342,7 +409,7 @@ centerContent {
     list-style: none;
     padding-left: 2px;
     line-height: 2em;
-/*    text-align: center;*/
+    /*    text-align: center;*/
 }
 
 footer .copyright {
@@ -351,9 +418,10 @@ footer .copyright {
 }
 
 .stayConnected {
-    background-color: #adfbd0; 
-    min-height: 5rem;  
+    background-color: #adfbd0;
+    min-height: 5rem;
 }
+
 .stayConnected {
     text-align: center;
 }
@@ -365,29 +433,35 @@ footer .copyright {
 footer .social-media {
     padding-top: 1rem;
     padding-bottom: 1.5rem;
-    text-align: center;    
+    text-align: center;
 }
+
 footer .copyright {
     color: #fff;
     padding-top: 1.5rem;
-    padding-bottom: 1.5rem;    
+    padding-bottom: 1.5rem;
     font-style: italic;
     font-size: .75rem;
 }
 
+
 /* Key Social Media colors */
+
 .fa-twitter-square {
     color: #60a9dc;
     font-size: 36px;
 }
+
 .fa-facebook-square {
     color: #3b579d;
     font-size: 36px;
 }
+
 .fa-google-plus-square {
     color: #D84B37;
     font-size: 36px;
 }
+
 .fa-tumblr-square {
     color: #35465c;
 }
@@ -401,6 +475,7 @@ footer .copyright {
     color: #cb2028;
     font-size: 36px;
 }
+
 
 /*
 .navbar-default .navbar-nav>.active>a {
@@ -419,11 +494,6 @@ footer .copyright {
 */
 
 
-
-
-
-
-
 /*
 @media (min-width: 663px) {
     .displayPhoneNumbers {
@@ -434,6 +504,7 @@ footer .copyright {
 }
 */
 
+
 /*
 @media (max-width: 767px) {
 .navbar-default .navbar-nav .open .dropdown-menu>li>a {
@@ -441,65 +512,82 @@ footer .copyright {
     }
 }
 */
-  
-.jq-elevator .jq-bottom:hover, .jq-elevator .jq-item:hover, .jq-elevator .jq-top:hover {
+
+.jq-elevator .jq-bottom:hover,
+.jq-elevator .jq-item:hover,
+.jq-elevator .jq-top:hover {
     opacity: .3;
 }
 
+
 /* accordion style */
 
+.ac-pane {
+    margin-bottom: 15px;
+    background-color: #16A085;
+    color: #fff;
+}
 
-.ac-pane { margin-bottom: 15px; background-color:#16A085; color:#fff;}
+.ac-pane:last-child {
+    margin-bottom: 0;
+}
 
-.ac-pane:last-child { margin-bottom: 0; }
-
-.ac-content { display: none; }
+.ac-content {
+    display: none;
+}
 
 .ac-title {
-  border: 1px solid #fff;
-  color: #fff;
-  display: block;
-  padding: 12px;
-  background-color:#1ABC9C;
+    border: 1px solid #fff;
+    color: #fff;
+    display: block;
+    padding: 12px;
+    background-color: #1ABC9C;
 }
 
 .ac-title i {
-  float: right;
-  font-size: 20px;
+    float: right;
+    font-size: 20px;
 }
 
-.ac-title i:before { content: "\f107"; }
+.ac-title i:before {
+    content: "\f107";
+}
 
-.active .ac-title i:before { content: "\f106"; }
+.active .ac-title i:before {
+    content: "\f106";
+}
 
 .ac-content {
-  border: 1px solid #fff;
-  margin-top: -1px;
-  padding: 15px;
+    border: 1px solid #fff;
+    margin-top: -1px;
+    padding: 15px;
 }
+
+
 /*  Media Queries */
+
 @media (min-width: 768px) {
     .navbar-default .container {
         background-color: #1a4212;
     }
     .headerSearch {
         display: inline-block;
-        margin-top: -8.5rem; 
-/*        margin-top: -2.0em;*/ /* Place search bar under logo */
+        margin-top: -8.5rem;
+        /*        margin-top: -2.0em;*/
+        /* Place search bar under logo */
     }
     .navbar-header {
         display: none;
     }
     .bodySearch {
-        display: none;        
+        display: none;
     }
-    
     .navbar-default .navbar-nav>li>a {
         color: #fff;
-    }  
+    }
     .fullPhoneNumbers {
         display: inline-block;
-            }
+    }
     .phoneButton {
         display: none;
     }
@@ -512,6 +600,6 @@ footer .copyright {
     }
     .element-padding {
         padding-top: 3rem;
+    }
 }
 
-}

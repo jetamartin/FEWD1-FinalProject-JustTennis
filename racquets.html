@@ -7,7 +7,7 @@
     <!-- If IE use the latest rendering engine -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Set the page to the width of the device and set the zoom level -->
-    <title>Template</title>
+    <title>Racquets</title>
 
 
     <!-- Bootstrap: Latest compiled and minified CSS -->
@@ -28,8 +28,12 @@
     <!-- Bootstrap: Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+    <!-- Racquet CSS   -->
+    <link rel="stylesheet" href="css/racquetstyles.css">
     <!-- justTennis Template CSS -->
     <link rel="stylesheet" href="css/styles.css">
+
+ 
 
 
 
@@ -64,24 +68,24 @@
 
 
                         <div class="col-xs-4 col-xs-offset-4 position-right">
-                         
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="glyphicon glyphicon-shopping-cart orange-accent" aria-hidden="true">&nbsp;Cart&nbsp;<span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">View Cart</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#">Checkout</a></li>                                        
-                                    </ul>
-                                </div>
-                            </div>
-<!--                            <img src="images/Shopping-Cart-36px.png" alt="Shopping Cart Icon">-->
 
-                            <!--                        <span>Email</span>                -->
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="glyphicon glyphicon-shopping-cart orange-accent" aria-hidden="true">&nbsp;Cart&nbsp;<span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">View Cart</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Checkout</a></li>
+                                </ul>
+                            </div>
                         </div>
+                        <!--                            <img src="images/Shopping-Cart-36px.png" alt="Shopping Cart Icon">-->
+
+                        <!--                        <span>Email</span>                -->
                     </div>
                 </div>
+            </div>
             </div>
 
 
@@ -150,14 +154,14 @@
                                 <!-- Collect the nav links, forms, and other content for toggling -->
                                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                     <ul class="nav navbar-nav">
-                                        <li><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                                        <li><a href="home.html">Home <span class="sr-only">(current)</span></a></li>
                                         <!--                    <li class="active dropdown"><a href="#">Gear</a></li>-->
                                         <li class="dropdown active">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gear <span class="caret"></span></a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="#">Tennis Gear</a></li>
+                                                <li><a href="gear.html">Tennis Gear</a></li>
                                                 <li role="separator" class="divider"></li>
-                                                <li><a href="#">Racquets</a></li>
+                                                <li><a href="racquets.html">Racquets</a></li>
                                                 <li><a href="#">Shoes</a></li>
                                                 <li><a href="#">Apparel</a></li>
                                                 <li><a href="#">Bags</a></li>
@@ -217,25 +221,6 @@
                                             </ul>
                                         </li>
                                     </ul>
-                                    
-
-<!--
-                                    <ul class="nav navbar-nav navbar-right">
-                                        <li><a href="#">Link</a></li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                            <ul class="dropdown-menu">
-
-                                                <li><a href="#">Another action</a></li>
-                                                <li><a href="#">Something else here</a></li>
-                                                <li><a href="#">Separated link</a></li>
-                                                <li role="separator" class="divider"></li>
-                                                <li><a href="#">One more separated link</a></li>
-
-                                            </ul>
-                                        </li>
-                                    </ul>
--->
                                 </div>
                                 <!-- /.navbar-collapse -->
                             </div>
@@ -255,19 +240,20 @@
             <div class="container">
                 <!--           <div class="header-promotions-bg">-->
                 <div class="row ">
-                    <div class="col-xs-4  position-center promotions">
-                        <span class="orange">FREE SHIPPING</span>
+                    <div class="col-xs-12 col-sm-4  position-center promotions ">
+                        <span class="orange">Free Shipping</span>
                     </div>
-                    <div class="col-xs-4 position-center promotions">
-                        <span class="orange">100% CUSTOMER SATISFACTION</span>
+                    <div class="col-xs-12 col-sm-4 position-center promotions">
+                        <span class="orange">100% Customer Satisfaction</span>
                     </div>
-                    <div class="col-xs-4 position-center orange promotions">
-                        <span class="orange">30 DAY PRICE GUARANTEE</span>
+                    <div class="col-xs-12 col-sm-4 position-center orange promotions">
+                        <span class="orange">30 Day Price Guarantee</span>
                     </div>
                 </div>
                 <!--           </div>-->
             </div>
         </div>
+
         <section class="container-fluid fullMain">
             <section class="container main playerBackground">
 
@@ -287,116 +273,211 @@
                 </div>
                 <div class="container">
                     <div class="row">
-                        <aside class="col-xs-3 sideNav">
-                            <h2>(Side Nav)</h2>
-                            <ul class="primaryNavItems">
-                                <li >
-                                    <a href="">Racquets</a>
-
-                                    <ul class="subNavItems">
-                                        <a href="">
-                                            <li>Babolat</li>
-                                        </a>
-                                        <a href="">
-                                            <li>Wilson</li>
-                                        </a>
-                                        <a href="">
-                                            <li>Head</li>
-                                        </a>
-                                        <a href="">
-                                            <li>Prince</li>
-                                        </a>
-                                    </ul>
+                        <aside class="col-xs-3 sideNav racquetSelect">
+                            <h4>Narrow results:</h4>
+                            <h5>Brand</h5>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="brand" value="Babolat">&nbsp;&nbsp;<span>Babolat</span>
+                                    <br>
                                 </li>
-                                <li class="orange">
-                                    <a href="">
-                                        <li>Shoes</li>
-                                    </a>
-
-                                    <ul class=subNavItems>
-                                        <a href="">
-                                            <li>Men's</li>
-                                        </a>
-                                        <a href="">
-                                            <li>Women's</li>
-                                        </a>
-                                    </ul>
+                                <li>
+                                    <input type="checkbox" name="brand" value="Dunlop">&nbsp;&nbsp;<span>Dunlop</span>
+                                    <br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="brand" value="Gamma">&nbsp;&nbsp;<span>Gamma</span>
+                                    <br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="brand" value="Head">&nbsp;&nbsp;<span>Head</span>
+                                    <br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="brand" value="Pacific">&nbsp;&nbsp;<span>Pacific</span>
+                                    <br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="brand" value="Prokennex">&nbsp;&nbsp;<span>Pro Kennex</span>
+                                    <br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="brand" value="Prince">&nbsp;&nbsp;<span>Prince</span>
+                                    <br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="brand" value="Technifibre">&nbsp;&nbsp;<span>Technifibre</span>
+                                    <br>
+                                </li>
+                                                                <li>
+                                    <input type="checkbox" name="brand" value="Volkl">&nbsp;&nbsp;<span>Volkl</span>
+                                    <br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="brand" value="Weed">&nbsp;&nbsp;<span>Weed</span>
+                                    <br>
                                 </li>
 
-                                <a href="">
-                                    <li>Apparel</li>
-                                </a>
-
-                                <ul class="subNavItems">
-                                    <a href="">
-                                        <li>Men's</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Women's</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Junior's</li>
-                                    </a>
-                                </ul>
+                                <li>
+                                    <input type="checkbox" name="brand" value="Wilson">&nbsp;&nbsp;<span>Wilson</span>
+                                    <br>
                                 </li>
-                                <a href="">
-                                    <li>Bags</li>
-                                </a>
-                                <ul class="subNavItems">
-                                    <a href="">
-                                        <li>Babolat</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Wilson</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Head</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Babolat</li>
-                                    </a>
-                                </ul>
+                                <li>
+                                    <input type="checkbox" name="brand" value="Yonex">&nbsp;&nbsp;<span>Yonex</span>
+                                    <br>
                                 </li>
-                                <a href="">
-                                    <li>Balls</li>
-                                </a>
-                                <ul class="subNavItems">
-                                    <a href="">
-                                        <li>Penn</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Dunlop</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Wilson</li>
-                                    </a>
-                                </ul>
+                            </ul>
+                            <h5>Headsize</h5>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="size" value="85to94">&nbsp;&nbsp;<span>85 - 94 sq. in.</span>
+                                    <br>
                                 </li>
-                                <a href="">
-                                    <li>Strings</li>
-                                </a>
-                                <a href="">
-                                    <li>Accessories</li>
-                                </a>
-                                <a href="">
-                                    <li>Sales</li>
-                                </a>
-                                <a href="">
-                                    <li>Clearance</li>
-                                </a>
-
+                                <li>
+                                    <input type="checkbox" name="size" value="95to104">&nbsp;&nbsp;<span>95 - 104 sq. in.</span>
+                                    <br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="size" value="105to114">&nbsp;&nbsp;<span>105 - 114 sq. in.</span>
+                                    <br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="size" value="115andUp">&nbsp;&nbsp;<span>115 and up</span>
+                                    <br>
+                                </li>
+                            </ul>
+                            <h5>Weight</h5>
+                            <ul class="selectDetails">
+                                <li>
+                                    <input type="checkbox" name="weight" value="Lt95">&nbsp;&nbsp;<span>8 - 9.5 oz.</span>
+                                    <br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="weight" value="Lt106">&nbsp;&nbsp;<span>9.6 - 10.6 oz.</span>
+                                    <br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="weight" value="Lt11">&nbsp;&nbsp;<span>10.7 - 11.5 oz</span>
+                                    <br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="weight" value="Lt125">&nbsp;&nbsp;<span>11.6 - 12.5 oz</span>
+                                    <br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="weight" value="Lt125">&nbsp;&nbsp;<span>12.6 oz and up</span>
+                                    <br>
+                                </li>
+                            </ul>
+                            <h5>Racquet Type</h5>
+                            <ul class="selectDetails">
+                                <li>
+                                    <input type="checkbox" name="type" value="comfort">&nbsp;&nbsp;<span>Comfort</span>
+                                    <br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="type" value="power">&nbsp;&nbsp;<span>Power</span>
+                                    <br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="type" value="control">&nbsp;&nbsp;<span>Control</span>
+                                    <br>
+                                </li>
                             </ul>
 
+                            <h5>Balance</h5>
+                            <ul class="selectDetails">
+                                <li>
+                                    <input type="checkbox" name="balance" value="Even">&nbsp;&nbsp; <span>Even Balance</span>
+                                    <br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="balance" value="HH">&nbsp;&nbsp;<span>Head Heavy</span>
+                                    <br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="balance" value="HL">&nbsp;&nbsp;<span>Head Light</span>
+                                    <br>
+                                </li>
+                            </ul>
 
                         </aside>
-                        <section class="col-xs-9 coreContent">
-                            <h1>(Main Body Content)</h1>
+                        <section class="col-xs-9 coreContent racquetsDesc">
+                            <!--                            <div class="container">-->
+
+                            <div class="row">
+
+                                <div class="accordion-wrapper">
+                                    <div class="ac-pane">
+                                        <a href="#" class="ac-title">
+                                            <h2>Tennis Racquets</h2>
+                                            <i class="fa"></i>
+                                        </a>
+                                        <div class="ac-content">
+                                            <section class="col-xs-12 racquetSummary">
+                                                <p>Find tennis racquets by Babolat, Head, Wilson, Prince, Yonex, Dunlop and more at JustTennis. We also carry children's and junior racquets.</p>
+
+                                                <p>Select among technical options including head size, weight, and balance. Do you prefer comfort, control or power? You can also browse by price and brand.</p>
+
+                                                <p>JustTennis already has a 30-day low price guarantee, but should you seek quality and a bargain, be sure to visit our sale specials.</p>
+                                            </section>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="row">
+                                    <section class="col-xs-6 col-sm-4 col-lg-3 racquet">
+                                        <img src="images/RacquetSales1.png" alt="Sale Racquets">
+                                    </section>
+
+                                    <section class="col-xs-6 col-sm-4 col-lg-3 racquet">
+                                        <img src="images/Babolat%20Raquets.png" alt="Babolat Racquets">
+                                    </section>
+                                    <section class="col-xs-6 col-sm-4 col-lg-3 racquet">
+                                        <img src="images/Head%20Racquets.png" alt="Head Racquets">
+                                    </section>
+
+
+                                    <section class="col-xs-6 col-sm-4 col-lg-3 racquet">
+                                        <img src="images/Prince%20Racquets.png" alt="Prince Racquets">
+                                    </section>
+                                    <section class="col-xs-6 col-sm-4 col-lg-3 racquet">
+                                        <img src="images/Pro%20Kennex%20Racquets.png" alt="Pro Kennex Racquets">
+                                    </section>
+                                    <section class="col-xs-6 col-sm-4 col-lg-3 racquet">
+                                        <img src="images/Tecnifibre%20Racquets.png" alt="Tecnifibre Racquets">
+                                    </section>
+
+
+                                    <section class="col-xs-6 col-sm-4 col-lg-3 racquet ">
+                                        <img src="images/Yonex%20Racquets.png" alt="Yonex Racquets">
+                                    </section>
+                                    <section class="col-xs-6 col-sm-4 col-lg-3 racquet">
+                                        <img src="images/Gamma%20Racquets.png" alt="Gamma Racquets">
+                                    </section>
+                                    <section class="col-xs-6 col-sm-4 col-lg-3 racquet">
+                                        <img src="images/Pacific%20Racquets.png" alt="Pacific Racquets">
+                                    </section>
+
+
+                                    <section class="col-xs-6 col-sm-4 col-lg-3 racquet">
+                                        <img src="images/Wilson%20Racquets.png" alt="Wilson Racquets">
+                                    </section>
+                                    <section class="col-xs-6 col-sm-4 col-lg-3 racquet">
+                                        <img src="images/Volkl%20Racquets.png" alt="Volkl Racquets">
+                                    </section>
+                                    <section class="col-xs-6 col-sm-4 col-lg-3 racquet">
+                                        <img src="images/Weed%20Racquets.png" alt="Weed Racquets">
+                                    </section>
+                                </div>
 
                         </section>
 
-                    </div>
+                        </div>
 
-                </div>
+                    </div>
 
             </section>
         </section>
@@ -404,34 +485,7 @@
         <footer class="container-fluid darkGreen">
             <section class="container">
                 <section class="row footerNavArea">
-                    <!--  Looked at implementing Accordion for hiding/displaying nav options but Accordion's don't lend themselves well to Nav
-    elements. Template is "wired up" for this Accordion if you want to use it someplace else in the code and want to see
-    how it operates just uncomment the lines immediately below to see it in action. -->
-                    <!-- 
-                     <div class="accordion-wrapper">
-                        <div class="ac-pane active">
-                            <a href="#" class="ac-title">
-                                <span>About Us</span>
-                                <i class="fa"></i>
-                            </a>
-                            <div class="ac-content">
-                                <a href="www.google.com">Google.com</a>
-                            </div>
-                        </div>
-                        <div class="ac-pane">
-                            <a href="#" class="ac-title">
-                                <span>Heading 2</span>
-                                <i class="fa"></i>
-                            </a>
-                            <div class="ac-content">
-                                Toggle Panel 2
-                            </div>
-                        </div>
-                    </div>
--->
-
-
-                    <div class="col-xs-6 col-sm-3 col-lg-3 footerNavBlock">
+                        <div class="col-xs-6 col-sm-3 col-lg-3 footerNavBlock">
                         <aside class="footerNavElements">
                             <a href=""><h3>About Us</h3></a>
                             <ul>
