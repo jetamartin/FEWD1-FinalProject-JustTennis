@@ -28,8 +28,12 @@
     <!-- Bootstrap: Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="css/gearstyles.css">
+    <link rel="stylesheet" href="css/racquetstyles.css">
+
     <!-- justTennis Template CSS -->
     <link rel="stylesheet" href="css/styles.css">
+
 
 
 
@@ -64,24 +68,24 @@
 
 
                         <div class="col-xs-4 col-xs-offset-4 position-right">
-                         
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="glyphicon glyphicon-shopping-cart orange-accent" aria-hidden="true">&nbsp;Cart&nbsp;<span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">View Cart</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#">Checkout</a></li>                                        
-                                    </ul>
-                                </div>
-                            </div>
-<!--                            <img src="images/Shopping-Cart-36px.png" alt="Shopping Cart Icon">-->
 
-                            <!--                        <span>Email</span>                -->
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="glyphicon glyphicon-shopping-cart orange-accent" aria-hidden="true">&nbsp;Cart&nbsp;<span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">View Cart</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Checkout</a></li>
+                                </ul>
+                            </div>
                         </div>
+                        <!--                            <img src="images/Shopping-Cart-36px.png" alt="Shopping Cart Icon">-->
+
+                        <!--                        <span>Email</span>                -->
                     </div>
                 </div>
+            </div>
             </div>
 
 
@@ -106,7 +110,7 @@
 
                         </div>
                         <div class="col-xs-6  col-sm-6 position-center logo-padding logo">
-                            <a href="#"><img src="images/Logo-Medium249X117.png" alt="Just Tennis Logo"></a>
+                            <a href="home.html"><img src="images/Logo-Medium249X117.png" alt="Just Tennis Logo"></a>
                         </div>
                         <div class="col-xs-3 col-sm-3 position-right element-padding">
                             <div class="navbar-header">
@@ -153,11 +157,11 @@
                                         <li><a href="home.html">Home <span class="sr-only">(current)</span></a></li>
                                         <!--                    <li class="active dropdown"><a href="#">Gear</a></li>-->
                                         <li class="dropdown active">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gear <span class="caret"></span></a>
+                                            <a href="gear.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gear <span class="caret"></span></a>
                                             <ul class="dropdown-menu">
                                                 <li><a href="gear.html">Tennis Gear</a></li>
                                                 <li role="separator" class="divider"></li>
-                                                <li><a href="#">Racquets</a></li>
+                                                <li><a href="racquets.html">Racquets</a></li>
                                                 <li><a href="#">Shoes</a></li>
                                                 <li><a href="#">Apparel</a></li>
                                                 <li><a href="#">Bags</a></li>
@@ -217,9 +221,9 @@
                                             </ul>
                                         </li>
                                     </ul>
-                                    
 
-<!--
+
+                                    <!--
                                     <ul class="nav navbar-nav navbar-right">
                                         <li><a href="#">Link</a></li>
                                         <li class="dropdown">
@@ -290,8 +294,8 @@
                     <div class="row">
                         <aside class="col-xs-3 sideNav">
                             <ul class="primaryNavItems">
-                                <li >
-                                    <a href="">Racquets</a>
+                                <li>
+                                    <a href="racquets.html">Racquets</a>
 
                                     <ul class="subNavItems">
                                         <a href="">
@@ -390,13 +394,119 @@
 
                         </aside>
                         <section class="col-xs-9 coreContent">
- 
+                            <section id="gearPageSlider" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#gearPageSlider" data-slide-to="0" class="active"></li>
+                                    <li data-target="#gearPageSlider" data-slide-to="1"></li>
+                                    <li data-target="#gearPageSlider" data-slide-to="2"></li>
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="images/Gear-slider-pic-1.png" alt="Adidas 2016 Shoes">
+                                        <!--
+                                        <div class="carousel-caption">
+                                            ...
+                                        </div>
+-->
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Gear-slider-pic2.png" alt="Under Armor Clothing">
+                                        <!--
+                                        <div class="carousel-caption">
+                                            ...
+                                        </div>
+-->
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/Gear-slider-pic3.png" alt="Head Racquets">
+                                        <!--
+                                        <div class="carousel-caption">
+                                            ...
+                                        </div>
+-->
+                                    </div>
+                                </div>
+
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#gearPageSlider" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#gearPageSlider" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </section>
+                            <section class="shoesAndRacquets">
+                                <div class="row">
+                                    <div class="col-xs-12 responsiveImage">
+                                        <img src="images/Gear-ShoesAndRacquetsHeader.png" alt="Shoes And Racquet Header">
+                                    </div>
+                                </div>
+                                
+<!--       Start Accordion for Shoes and Panel on Mobile...                         -->
+                                <div class="row mobileView">
+                                    <div class="accordion-wrapper col-xs-12 col-sm-4 responsiveImage">
+                                        <div class="ac-pane">
+                                            <a href="#" class="ac-title">
+                                                <h2>Men's Shoes</h2>
+                                                <i class="fa"></i>
+                                            </a>
+                                            <div class="ac-content">
+                                                <a href=""><img src="images/Gear-Shoes.png" alt="Men's Shoes Panel"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-wrapper col-xs-12 col-sm-4 responsiveImage">
+                                        <div class="ac-pane">
+                                            <a href="#" class="ac-title">
+                                                <h2>Racquets</h2>
+                                                <i class="fa"></i>
+                                            </a>
+                                            <div class="ac-content">
+                                                <a href=""><img src="images/Gear-racquets.png" alt="Racquets Panel"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-wrapper col-xs-12 col-sm-4 responsiveImage">
+                                        <div class="ac-pane">
+                                            <a href="#" class="ac-title">
+                                                <h2>Racquets</h2>
+                                                <i class="fa"></i>
+                                            </a>
+                                            <div class="ac-content">
+                                                <a href=""><img src="images/Gear-Womens-Shoes.png" alt="Women's Shoes Panel"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+<!--    Accordion for Shoes & Racquet panel for Mobile                           -->
+                                   
+<!--    Shoes and Racquet pane for non-Mobile Views                                 -->
+                                    <div class="row nonMobileView">
+                                        <div class="col-xs-12 col-sm-4 responsiveImage">
+                                            <a href=""><img src="images/Gear-Shoes.png" alt="Men's Shoes Panel"></a>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 responsiveImage">
+                                            <a href="racquets.html"><img src="images/Gear-racquets.png" alt="Racquets Panel"></a>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 responsiveImage">
+                                            <a href=""><img src="images/Gear-Womens-Shoes.png" alt="Women's Shoes Panel"></a>
+                                        </div>
+                                    </div>
+                            </section>
+                            <section class="responsiveImage fourAds">
+                                <img src="images/Gear-4Advert.png" alt="Block of 4 Advertisements">
+                            </section>
 
                         </section>
 
-                    </div>
+                        </div>
 
-                </div>
+                    </div>
 
             </section>
         </section>

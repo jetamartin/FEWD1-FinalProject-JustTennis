@@ -1,0 +1,49 @@
+/* Hide nonMobileView of Shoe&Racquet Panel*/
+.nonMobileView {
+    display: none;
+}
+
+/* Accordion Styling*/
+.shoesAndRacquets .ac-title {
+    border: none;
+    background-color: transparent;
+}
+
+.shoesAndRacquets .ac-content {
+    border: none;
+}
+.shoesAndRacquets .ac-pane {
+    background-color: #1a4212;
+}
+.shoesAndRacquets .ac-title i {
+    font-size: 35px;
+    margin-top: -40px;
+    color: #e25e12;
+}
+.shoesAndRacquets a:focus, .racquetDesc a:hover {
+    color: #e25e12;
+    text-decoration: none;
+}
+.shoesAndRacquets a:hover {
+    color: #e25e12;
+    text-decoration:underline;
+}
+
+
+@media (min-width: 768px) {
+    .nonMobileView {
+        display: block;
+    } 
+    .mobileView {
+        display: none;
+    }
+    
+    
+   .racquetsDesc h2 {
+    font-size: 3rem; 
+   }
+    .racquetsDesc .ac-title i {
+    font-size: 45px;
+    margin-top: -50px;
+    }
+}

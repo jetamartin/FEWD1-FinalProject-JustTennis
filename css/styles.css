@@ -256,12 +256,12 @@ header img {
 }
 
 /* Home Page Slider */
-#homePageSlider img {
+#homePageSlider, #gearPageSlider img {
     width: 100%;
     height: auto;
 }
 
-#homePageSlider {
+#homePageSlider, #gearPageSlider img {
     border: solid 3px lightgrey;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, .2);
 }
@@ -270,10 +270,14 @@ header img {
     height: auto;
 }
 
-.fourAds, .clearance  {
+.fourAds,.shoesAndRacquets, .clearance  {
     margin: 2rem 0;
     border: solid 2px lightgrey;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, .2);
+}
+
+.clearance img {
+    padding-top: 1.5rem;
 }
 
 /* Sample Side Nav Styling 
